@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .grid-container {
+        display: grid;
+        background-color: black;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 131px 155px 20px;
+        gap: 9px;
+      }
+
+      .white {
+        background-color: #f0f1ec;
+      }
+
+      .red {
+        background-color: #e72f24;
+      }
+
+      .black {
+        background-color: #232629;
+      }
+
+      .blue {
+        background-color: #004592;
+        border-bottom: 1px black solid;
+      }
+
+      .yellow {
+        background-color: #f9d01e;
+      }
+
+      .whiteone {
+        grid-column: 2 / span 3;
+      }
+
+      .whitetwo {
+        grid-row: 2 / span 2;
+      }
+
+      .whitethree {
+        grid-row: 2 / span 2;
+        grid-column: 2 / span 2;
+      }
+
+      .white4 {
+        grid-row: 3 / span 2;
+        grid-column: 4;
+      }
+
+      .white5 {
+        grid-row: 4;
+        grid-column: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="flex-container">
+      <div class="grid-container">
+        <div class="red"></div>
+        <div class="white whiteone"></div>
+        <div class="white whitetwo"></div>
+        <div class="white whitethree"></div>
+        <div class="blue"></div>
+        <div class="white white4"></div>
+        <div class="white white5"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
+    </div>
+  </body>
+</html>
